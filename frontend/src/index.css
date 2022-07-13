@@ -1,0 +1,66 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-colour-primary: black;
+  --bg-colour-secondary: white;
+  --bg-colour-extra: rgb(247, 160, 174);
+  --text-colour-1: white;
+  --text-colour-2: black;
+  --font-impact: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --font-courier: 'Courier New', Courier, monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.background {
+  background: url('assets/golf-course-image.jpeg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed; 
+  flex-grow: 1;
+  margin: 0px;
+  min-height: 100vh;
+  height: 100%;
+  width:100%;
+}
+.background::before {
+  content:"";
+  position:fixed;
+  width:inherit;
+  height:inherit;
+  background-color:rgba(0,0,0,0.80);
+}
+
+@media screen and (max-width: 860px) {
+  .background {
+    background: url('assets/golf-course-mobile.jpeg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed; 
+    flex-grow: 1;
+    margin: 0px;
+    min-height:100vh;
+    height:100%;
+    width:100%;
+  }
+  .background::before {
+    /* content:"";
+    position:absolute;
+    width:inherit;
+    height:inherit; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,0.75);
+  }
+}

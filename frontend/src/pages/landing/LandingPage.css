@@ -1,0 +1,16 @@
+.landing-content {
+    color: var(--text-colour-1);
+    position: relative;
+    max-width: 50%;
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:860px) {
+    .landing-content {
+        max-width: 90%;
+        margin: 20px auto 0px auto;
+    }
+}

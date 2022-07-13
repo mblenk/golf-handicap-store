@@ -1,0 +1,78 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--bg-colour-primary);
+    color: var(--text-colour-1);
+    margin: 0;
+}
+.navbar h2 {
+    margin: 0px 0px 0px 20px;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.navbar-links {
+    margin: 0px 20px 0px auto;
+    display: flex;
+}
+.navbar a {
+    margin: 0px 10px 0px 0px;
+    color: var(--text-colour-2);
+    background-color: var(--bg-colour-secondary);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a:hover {
+    background-color: var(--bg-colour-extra);
+    color: var(--text-colour-1);
+}
+.navbar-btns {
+    display: flex;
+    margin-left: auto;
+}
+.navbar button {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--bg-colour-extra);
+    color: var(--text-colour-);
+    border: 2px solid var(--bg-colour-secondary);
+    margin-right: 10px;
+    font-weight: bold;
+    font-size:large ;
+}
+.navbar button:hover {
+    color: var(--text-colour-2);
+    background-color: var(--bg-colour-secondary);
+}
+
+@media screen and (max-width:860px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-btns {
+        margin: 30px auto 20px auto;
+    }
+    .navbar-links {
+        margin: 20px auto 0px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar a {
+        max-width: 25%;
+        min-width: 25%;
+    }
+    .navbar button {
+        margin: 20px auto 0px auto;
+
+    }
+}

@@ -1,0 +1,81 @@
+.error-heading {
+    color: var(--text-colour-1);
+    position: relative;
+}
+.record {
+    position: relative;
+    color: var(--text-colour-1);
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.record h2 {
+    text-decoration: underline;
+}
+.record-score {
+    width: 40%;
+}
+.record-score label {
+    display: block;
+    margin: 15px auto 10px auto;
+}
+.record-score span {
+    display: block;
+    margin: 0px auto 5px auto;
+    font-size: large;
+}
+.record-score input {
+    padding: 5px;
+    max-width: 40%;
+}
+.record-score button {
+    margin-top: 10px;
+    height: 7%;
+    width: 25%;
+    font-size: large;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.record-score button:hover {
+    color: var(--text-colour-1);
+    background-color: var(--bg-colour-extra);
+}
+.instructions {
+    position: relative;
+    width: 60%;
+    margin-right: 20px;
+}
+.instructions a {
+    color: var(--text-colour-1);
+}
+.diffs-graphic {
+    width: 60%;
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:860px) {
+    .record {
+        display: block;
+        text-align: center;
+    }
+    .record-score {
+        width: 100%;
+    }
+    .record-score button {
+       min-height: 5%;
+       /* min-width: 30%;
+       max-width: 30%; */
+    }
+    .instructions {
+        text-align: center;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .diffs-graphic {
+        width: 80%;
+    }
+}

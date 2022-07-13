@@ -1,0 +1,56 @@
+.user-forms {
+    max-width: 50%;
+    margin: 20px auto 20px auto;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}
+.user-forms h2 {
+    color: var(--text-colour-1);
+    text-decoration: underline;
+    font-size: xx-large;
+}
+.user-forms label {
+    display: block;
+    margin-top: 10px;
+}
+.user-forms span {
+    color: var(--text-colour-1);
+    display: block;
+    margin-top: 10px;
+}
+.user-forms input {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: large;
+}
+.user-forms button {
+    margin: 20px 0px 20px 0px;
+    height: 5%;
+    width: 15%;
+    font-size: large;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.user-forms button:hover {
+    color: var(--text-colour-1);
+    background-color: var(--bg-colour-extra);
+}
+.user-forms p {
+    color: var(--text-colour-1);
+}
+.user-forms a {
+    text-decoration: none
+}
+
+@media screen and (max-width:860px) {
+    .user-forms button {
+        height: 5%;
+        width: 35%; 
+        max-width: 100px;
+        min-width: 80px;
+    }
+}

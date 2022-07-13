@@ -1,0 +1,103 @@
+.history {
+    position: relative;
+    display: flex;
+    width: 100%;
+    column-gap: 20px;
+    color: var(--text-colour-1);
+    justify-content: center;
+}
+.user-data {
+    min-width: 35%;
+    text-align: center;
+    margin-left: 1%;
+}
+.graph {
+    min-width: 65%;
+    padding: 10px;
+    margin: 10px;
+}
+.graph h2 {
+    text-decoration: underline;
+    color: var(--text-colour-1);
+}
+.line-graph {
+    max-width: 90%;
+}
+.handicap-block {
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--bg-colour-secondary);
+    padding: 3px;
+    border-radius: 15px;
+    position: relative;
+}
+.handicap-block h2 {
+    margin-left: 2%;
+    text-align: left;
+    text-decoration: underline;
+    color: var(--text-colour-2);
+    font-size: medium;
+}
+.cards {
+    display: block;
+    max-height:50vh;
+    overflow-y: scroll
+}
+.history-card {
+    background-color: var(--bg-colour-primary);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    column-gap: 35px;
+    font-size: medium;
+    width: 90%;
+    position: relative;
+}
+.history-card p {
+    text-decoration: underline;
+}
+.history-card img {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    background-color: var(--bg-colour-secondary);
+    height: 25%;
+    border-radius: 10px;
+}
+#expand {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+#expand-less {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:860px) {
+    .history {
+        display: block;
+    }
+    .handicap-block {
+        min-width: 50%;
+        margin: 20px auto;
+    }
+    .graph {
+        min-width: 65%;
+        padding: 5px;
+        margin: 10px;
+    }
+    .graph h2 {
+        text-align: center;
+    }
+    .line-graph {
+        max-width: 95%;
+        margin: 0px auto;
+    }
+}
